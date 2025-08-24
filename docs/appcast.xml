@@ -2,13 +2,60 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>CircleCast</title>
+        <link>https://adamevers.github.io/circle-cast-releases/</link>
+        <description>CircleCast Updates</description>
+        <language>en</language>
         <item>
-            <title>1.0</title>
-            <pubDate>Sat, 23 Aug 2025 14:09:00 -0500</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <title>1.0.0-beta.13</title>
+            <description><![CDATA[
+                <h3>Bug Fixes</h3>
+                <ul>
+                    <li><strong>Update Check Feedback (Regression)</strong>: Fixed "Check Now" button in preferences still not working after Issue #10</li>
+                    <li>Root cause: Previous fix was never merged to master branch</li>
+                    <li>"Last check" field now updates immediately when check starts (not just on success)</li>
+                    <li>Added comprehensive visual feedback during check process with proper button states</li>
+                    <li>Error messages displayed for failed update checks with timeout protection</li>
+                    <li>Enhanced UI state management with color-coded success/error indicators</li>
+                    <li>Includes 30-second timeout protection against hanging requests</li>
+                </ul>
+                <h3>Configuration Updates</h3>
+                <ul>
+                    <li><strong>Sparkle Auto-Update System</strong>: Fixed update check functionality for private repository</li>
+                    <li>Updated SUFeedURL to use GitHub Pages: https://adamevers.github.io/circle-cast-releases/appcast.xml</li>
+                    <li>Added GitHub Actions workflow step to automatically sync appcast to public repository</li>
+                    <li>Enables update checking while keeping main repository private</li>
+                    <li>Configured automated appcast deployment via GitHub Pages</li>
+                </ul>
+            ]]></description>
+            <pubDate>Sat, 24 Aug 2025 21:00:00 +0000</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.0.0-beta.13</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/adamevers/CircleCast/releases/download/v1.0.0-beta.1/CircleCast-1.0.0-beta.1.dmg" length="1850100" type="application/octet-stream" sparkle:edSignature="xa6OGNsgZUV7Am6En92fBC601kRBttHfIIis7HNAZ1UpGsgAwzw+J9ABlm0MzCi1gMe4g5xNZFyJLADHDfmYAQ=="/>
+            <enclosure url="https://adamevers.github.io/circle-cast-releases/releases/CircleCast-1.0.0-beta.13.dmg" 
+                      length="1900000" 
+                      type="application/octet-stream" 
+                      sparkle:edSignature="PLACEHOLDER_SIGNATURE_WILL_BE_GENERATED_BY_BUILD_PROCESS"/>
+        </item>
+        <item>
+            <title>1.0.0-beta.5</title>
+            <description><![CDATA[
+                <h3>New Features</h3>
+                <ul>
+                    <li>Trial implementation with 10-hour cumulative usage tracking</li>
+                    <li>Auto-update system using Sparkle 2 framework</li>
+                    <li>Offline license validation using Ed25519 signatures</li>
+                    <li>Machine fingerprinting for license binding</li>
+                    <li>GitHub Releases integration for automated distribution</li>
+                </ul>
+            ]]></description>
+            <pubDate>Fri, 23 Aug 2025 19:30:45 +0000</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.0-beta.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://adamevers.github.io/circle-cast-releases/releases/CircleCast-1.0.0-beta.5.dmg" 
+                      length="1850100" 
+                      type="application/octet-stream" 
+                      sparkle:edSignature="xa6OGNsgZUV7Am6En92fBC601kRBttHfIIis7HNAZ1UpGsgAwzw+J9ABlm0MzCi1gMe4g5xNZFyJLADHDfmYAQ=="/>
         </item>
     </channel>
 </rss>
