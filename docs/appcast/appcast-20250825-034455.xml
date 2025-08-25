@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>CircleCast</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Mon, 25 Aug 2025 03:39:57 +0000</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://adamevers.github.io/circle-cast-releases/releases/CircleCast-1.0.2.dmg" length="1881881" type="application/octet-stream" sparkle:edSignature="IdSpsSTjhY3eXgfaRxoEvZZHRI+I4xnnQSFT2MeJ45nAaN8dzreZsRgBHmioox4851vDzPHT+5BfQmGI/7zkAQ=="/>
+        </item>
+    </channel>
+</rss>
