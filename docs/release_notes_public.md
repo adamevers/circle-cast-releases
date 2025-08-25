@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## v1.0.32 - 2025-08-25
+
+### 🔒 Security & Distribution Fix
+- **MAJOR**: Fixed critical issue preventing app updates from being distributed!
+  - Resolved Apple notarization failures that were blocking new versions from reaching users
+  - Your CircleCast app will now receive properly signed and verified updates
+  - Eliminates security warnings and installation issues with new versions
+  - Ensures all future updates are properly authenticated by Apple
+
+### ✨ Behind the Scenes Improvements
+- **Rock-Solid Signing**: Enhanced code signing process for maximum security and compatibility
+- **Apple Compliance**: Full compliance with Apple's latest security requirements
+- **Bulletproof Updates**: Automated release system now works flawlessly end-to-end
+
+### 💡 What This Means for You
+- ✅ Future app updates will install smoothly without security warnings
+- ✅ Your Mac will properly trust and verify all CircleCast updates
+- ✅ Automatic updates through the built-in updater work reliably
+- ✅ No more "unidentified developer" warnings or installation issues
+
+### 🛡️ Security Note
+This update strengthens CircleCast's security posture by ensuring all releases are properly signed with Apple's Developer ID certificate and successfully pass Apple's notarization process. This means your Mac's security systems will always trust CircleCast updates.
+
+---
+
 ## v1.0.24 - 2025-08-25
 
 ### 🐛 Bug Fixes
