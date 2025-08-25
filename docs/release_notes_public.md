@@ -7,6 +7,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## v1.0.33 - 2025-08-25
+
+### 🔄 Version Sync Fixed
+- **RESOLVED**: Fixed version confusion between different parts of the app ecosystem!
+  - Your local version info now matches what's available for download
+  - No more wondering "which version am I actually running?"
+  - The app's update system now shows consistent version information
+  - Everything is properly aligned behind the scenes
+
+### 🧪 Enhanced Channel Testing  
+- **BETA FIRST**: This release uses our new beta-first testing approach
+  - New versions go to beta channel first for testing (like this v1.0.33!)  
+  - Once tested, they can be promoted to stable channel
+  - You get access to the latest improvements while maintaining stability
+  - Added comprehensive testing tools to ensure quality
+
+### ⚙️ Behind the Scenes
+- **Better Synchronization**: Master development branch now stays in sync with releases
+- **Smarter Workflows**: Enhanced release automation handles version management better
+- **Channel Support**: Full beta/stable channel handling with proper appcast support
+- **Testing Suite**: Added automated tests to catch version sync issues early
+
+### 💡 What This Means for You
+- ✅ Version numbers make sense across the entire app ecosystem
+- ✅ Update notifications show the correct latest version
+- ✅ Beta releases let you test new features before they go stable
+- ✅ More reliable and predictable update experience
+
+### 🚀 Next Steps
+Want to help test new features? You're already on the beta channel! When we're confident this version is solid, we can promote it to stable for all users.
+
+---
+
 ## v1.0.32 - 2025-08-25
 
 ### 🔒 Security & Distribution Fix
