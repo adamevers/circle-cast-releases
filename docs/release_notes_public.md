@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## v1.0.24 - 2025-08-25
+
+### 🐛 Bug Fixes
+- **Update System Fixed**: Completely resolved the update download issue that was preventing automatic updates!
+  - Fixed broken download links in the app updater that were preventing users from getting new versions
+  - Your CircleCast app will now receive updates seamlessly through the built-in updater
+  - Sparkle auto-update system is now fully operational and reliable
+  - Automatic version detection now works correctly
+
+### ✨ Improvements
+- **Bulletproof Updates**: Enhanced update delivery system for reliable automatic updates
+- **Seamless Experience**: No more broken download links - updates just work!
+- **Better Version Display**: Version information now shows correctly throughout the app
+
+### 💡 What This Means for You
+- ✅ Your app will now automatically notify you when updates are available
+- ✅ Clicking "Download Update" will actually work (no more broken links!)
+- ✅ You'll get new features and bug fixes delivered seamlessly
+- ⚠️ If you're on an older version (v1.0.0-v1.0.23), you may need to manually download this update once to get back on the automatic update track
+
+---
+
 ## v1.0.22 - 2025-08-25
 
 ### 🐛 Bug Fixes
