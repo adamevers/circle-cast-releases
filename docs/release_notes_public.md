@@ -7,20 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## v1.0.5 - 2025-08-24
+## v1.0.6 - 2025-08-24
 
 ### 🐛 Bug Fixes
 - **Fixed Update Check Button**: The "Check Now" button in preferences now works properly
+  - **Major Fix**: Resolved controller deallocation issue that was preventing button actions
   - Clicking "Check Now" immediately updates the "Last Check" field  
   - Visual feedback shows when update check is in progress
   - Clear success/error messages when check completes
-- **Enhanced Update System**: Improved reliability of automatic update checking
-- **Better User Experience**: Immediate feedback when checking for updates
+- **Fixed Time Display**: "Last Check" now shows proper relative time ("2 minutes ago" instead of "in 2 minutes")
+- **Fixed Version Detection**: App version now properly matches release versions for accurate update checking
+- **Fixed Success Messages**: "You're up to date!" now displays as success, not an error
 
 ### ⚡ Improvements
 - More responsive update checking interface
 - Enhanced error handling for network issues
 - Extended timeout handling for slower connections
+- Better time formatting and user feedback
 
 ---
 

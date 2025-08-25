@@ -36,28 +36,33 @@ href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>, and
 this project adheres to <a
 href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <hr />
-<h2 id="v1.0.5---2025-08-24">v1.0.5 - 2025-08-24</h2>
+<h2 id="v1.0.6---2025-08-24">v1.0.6 - 2025-08-24</h2>
 <h3 id="bug-fixes">🐛 Bug Fixes</h3>
 <ul>
 <li><strong>Fixed Update Check Button</strong>: The “Check Now” button
 in preferences now works properly
 <ul>
+<li><strong>Major Fix</strong>: Resolved controller deallocation issue
+that was preventing button actions</li>
 <li>Clicking “Check Now” immediately updates the “Last Check”
 field<br />
 </li>
 <li>Visual feedback shows when update check is in progress</li>
 <li>Clear success/error messages when check completes</li>
 </ul></li>
-<li><strong>Enhanced Update System</strong>: Improved reliability of
-automatic update checking</li>
-<li><strong>Better User Experience</strong>: Immediate feedback when
-checking for updates</li>
+<li><strong>Fixed Time Display</strong>: “Last Check” now shows proper
+relative time (“2 minutes ago” instead of “in 2 minutes”)</li>
+<li><strong>Fixed Version Detection</strong>: App version now properly
+matches release versions for accurate update checking</li>
+<li><strong>Fixed Success Messages</strong>: “You’re up to date!” now
+displays as success, not an error</li>
 </ul>
 <h3 id="improvements">⚡ Improvements</h3>
 <ul>
 <li>More responsive update checking interface</li>
 <li>Enhanced error handling for network issues</li>
 <li>Extended timeout handling for slower connections</li>
+<li>Better time formatting and user feedback</li>
 </ul>
 <hr />
 <h2 id="v1.0.2---2025-08-24">v1.0.2 - 2025-08-24</h2>
