@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## v1.0.5 - 2025-08-24
+
+### 🐛 Bug Fixes
+- **Fixed Update Check Button**: The "Check Now" button in preferences now works properly
+  - Clicking "Check Now" immediately updates the "Last Check" field  
+  - Visual feedback shows when update check is in progress
+  - Clear success/error messages when check completes
+- **Enhanced Update System**: Improved reliability of automatic update checking
+- **Better User Experience**: Immediate feedback when checking for updates
+
+### ⚡ Improvements
+- More responsive update checking interface
+- Enhanced error handling for network issues
+- Extended timeout handling for slower connections
+
+---
+
 ## v1.0.2 - 2025-08-24
 
 ### 🚀 New Features
