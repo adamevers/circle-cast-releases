@@ -35,7 +35,116 @@ file.</p>
 href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>, and
 this project adheres to <a
 href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="v1.0.36---2025-08-26">v1.0.36 - 2025-08-26</h2>
+<h3 id="release-validation-system">🛡️ Release Validation System</h3>
+<ul>
+<li><strong>NEW</strong>: Pre-flight validation prevents GitHub Actions
+failures!
+<ul>
+<li>Run <code>./scripts/validate-release.sh -v VERSION</code> before
+creating any release</li>
+<li>Catches issues in 30 seconds instead of after 5+ minute builds</li>
+<li>Tests YAML parsing, dependencies, git status, and version
+consistency</li>
+<li>Same validation logic runs locally and in GitHub Actions for
+consistency</li>
+<li>Optional pre-commit hooks for automatic validation</li>
+</ul></li>
+</ul>
+<h3 id="build-system-improvements">🔧 Build System Improvements</h3>
+<ul>
+<li><strong>FIXED</strong>: YAML parsing errors that were breaking
+release documentation generation
+<ul>
+<li>Resolved pandoc processing issues in GitHub Actions workflow</li>
+<li>Enhanced release notes format for better documentation</li>
+<li>Added early validation step to GitHub Actions (fails fast before
+expensive builds)</li>
+</ul></li>
+</ul>
+<h3 id="enhanced-documentation">📚 Enhanced Documentation</h3>
+<ul>
+<li><strong>Comprehensive Validation Guide</strong>: New
+<code>docs/RELEASE_VALIDATION.md</code></li>
+<li><strong>Updated Process Docs</strong>: All release documentation
+includes validation steps</li>
+<li><strong>Developer Experience</strong>: Clear setup instructions and
+troubleshooting guides</li>
+</ul>
+<h3 id="developer-benefits">⏱️ Developer Benefits</h3>
+<ul>
+<li><strong>Time Savings</strong>: No more waiting 5+ minutes to
+discover simple issues</li>
+<li><strong>Better Feedback</strong>: Specific error messages with exact
+fix instructions<br />
+</li>
+<li><strong>Reliable Releases</strong>: Validation ensures releases work
+the first time</li>
+<li><strong>Automation</strong>: Set-and-forget pre-commit hooks for
+automatic checking</li>
+</ul>
 <hr />
+<h2 id="v1.0.35---2025-08-26">v1.0.35 - 2025-08-26</h2>
+<h3 id="new-features">✨ New Features</h3>
+<ul>
+<li><strong>NEW</strong>: Permissions tab in Preferences! (#34)
+<ul>
+<li>Access permission settings anytime from the menu bar →
+Preferences</li>
+<li>See real-time status of Screen Recording, Microphone, and Camera
+permissions</li>
+<li>Grant permissions or jump directly to System Settings with one
+click</li>
+<li>Perfect for troubleshooting permission issues or adding optional
+permissions later</li>
+<li>Larger, more comfortable preferences window that matches the welcome
+screen</li>
+</ul></li>
+</ul>
+<h3 id="major-bug-fixes">🐛 Major Bug Fixes</h3>
+<ul>
+<li><strong>FIXED</strong>: Screen Recording permission now shows
+correct status! (#32)
+<ul>
+<li>No more confusing “Denied” messages when you’ve actually granted
+permission</li>
+<li>Fixed issue where macOS treated different app versions as separate
+apps</li>
+<li>Much better onboarding experience - you’ll see accurate permission
+status every time</li>
+<li>Added helpful recovery options if you still see permission
+issues</li>
+</ul></li>
+</ul>
+<h3 id="enhanced-permission-management">🔧 Enhanced Permission
+Management</h3>
+<ul>
+<li><strong>NEW</strong>: Completely redesigned permission reset tool
+that’s now super user-friendly!
+<ul>
+<li>Check your current permissions with
+<code>./reset_permissions.sh --status</code></li>
+<li>Reset permissions for Screen Recording, Microphone, and Camera all
+at once</li>
+<li>Smart detection - the script knows if CircleCast is running and can
+quit/restart it for you</li>
+<li>Color-coded output makes it easy to see what’s working and what
+needs attention</li>
+<li>Works with all versions of CircleCast (development, production,
+alternative configs)</li>
+<li>Clear step-by-step guidance for fixing permission issues</li>
+</ul></li>
+</ul>
+<h3 id="improved-user-experience">⚡ Improved User Experience</h3>
+<ul>
+<li>Interactive mode walks you through permission fixes
+step-by-step</li>
+<li>Multiple operation modes: check status only, reset only, quiet mode
+for scripts</li>
+<li>Better error messages that actually help you fix problems</li>
+<li>Automatic app management - no more manually quitting and restarting
+CircleCast</li>
+</ul>
 <h2 id="v1.0.33---2025-08-25">v1.0.33 - 2025-08-25</h2>
 <h3 id="version-sync-fixed">🔄 Version Sync Fixed</h3>
 <ul>
@@ -363,7 +472,7 @@ actual app version</li>
 </ul>
 <hr />
 <h2 id="v1.0.6---2025-08-24">v1.0.6 - 2025-08-24</h2>
-<h3 id="new-features">✨ New Features</h3>
+<h3 id="new-features-1">✨ New Features</h3>
 <ul>
 <li><strong>Enhanced Preferences</strong>: Added About and Licenses tabs
 to preferences window
@@ -402,7 +511,7 @@ displays as success, not an error</li>
 </ul>
 <hr />
 <h2 id="v1.0.2---2025-08-24">v1.0.2 - 2025-08-24</h2>
-<h3 id="new-features-1">🚀 New Features</h3>
+<h3 id="new-features-2">🚀 New Features</h3>
 <ul>
 <li>Complete automated release system now live!</li>
 <li>Sparkle auto-updates with secure EdDSA signatures<br />

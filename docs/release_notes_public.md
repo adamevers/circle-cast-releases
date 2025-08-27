@@ -5,7 +5,66 @@ All notable changes to CircleCast will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
----
+## v1.0.36 - 2025-08-26
+
+### 🛡️ Release Validation System
+- **NEW**: Pre-flight validation prevents GitHub Actions failures!
+  - Run `./scripts/validate-release.sh -v VERSION` before creating any release
+  - Catches issues in 30 seconds instead of after 5+ minute builds
+  - Tests YAML parsing, dependencies, git status, and version consistency
+  - Same validation logic runs locally and in GitHub Actions for consistency
+  - Optional pre-commit hooks for automatic validation
+
+### 🔧 Build System Improvements  
+- **FIXED**: YAML parsing errors that were breaking release documentation generation
+  - Resolved pandoc processing issues in GitHub Actions workflow
+  - Enhanced release notes format for better documentation
+  - Added early validation step to GitHub Actions (fails fast before expensive builds)
+
+### 📚 Enhanced Documentation
+- **Comprehensive Validation Guide**: New `docs/RELEASE_VALIDATION.md`
+- **Updated Process Docs**: All release documentation includes validation steps
+- **Developer Experience**: Clear setup instructions and troubleshooting guides
+
+### ⏱️ Developer Benefits
+- **Time Savings**: No more waiting 5+ minutes to discover simple issues
+- **Better Feedback**: Specific error messages with exact fix instructions  
+- **Reliable Releases**: Validation ensures releases work the first time
+- **Automation**: Set-and-forget pre-commit hooks for automatic checking
+
+***
+
+## v1.0.35 - 2025-08-26
+
+### ✨ New Features
+- **NEW**: Permissions tab in Preferences! (#34)
+  - Access permission settings anytime from the menu bar → Preferences
+  - See real-time status of Screen Recording, Microphone, and Camera permissions
+  - Grant permissions or jump directly to System Settings with one click
+  - Perfect for troubleshooting permission issues or adding optional permissions later
+  - Larger, more comfortable preferences window that matches the welcome screen
+
+### 🐛 Major Bug Fixes
+- **FIXED**: Screen Recording permission now shows correct status! (#32)
+  - No more confusing "Denied" messages when you've actually granted permission
+  - Fixed issue where macOS treated different app versions as separate apps
+  - Much better onboarding experience - you'll see accurate permission status every time
+  - Added helpful recovery options if you still see permission issues
+
+### 🔧 Enhanced Permission Management
+- **NEW**: Completely redesigned permission reset tool that's now super user-friendly!
+  - Check your current permissions with `./reset_permissions.sh --status`
+  - Reset permissions for Screen Recording, Microphone, and Camera all at once
+  - Smart detection - the script knows if CircleCast is running and can quit/restart it for you
+  - Color-coded output makes it easy to see what's working and what needs attention
+  - Works with all versions of CircleCast (development, production, alternative configs)
+  - Clear step-by-step guidance for fixing permission issues
+  
+### ⚡ Improved User Experience
+- Interactive mode walks you through permission fixes step-by-step
+- Multiple operation modes: check status only, reset only, quiet mode for scripts
+- Better error messages that actually help you fix problems
+- Automatic app management - no more manually quitting and restarting CircleCast
 
 ## v1.0.33 - 2025-08-25
 
@@ -38,7 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🚀 Next Steps
 Want to help test new features? You're already on the beta channel! When we're confident this version is solid, we can promote it to stable for all users.
 
----
+***
 
 ## v1.0.32 - 2025-08-25
 
@@ -63,7 +122,7 @@ Want to help test new features? You're already on the beta channel! When we're c
 ### 🛡️ Security Note
 This update strengthens CircleCast's security posture by ensuring all releases are properly signed with Apple's Developer ID certificate and successfully pass Apple's notarization process. This means your Mac's security systems will always trust CircleCast updates.
 
----
+***
 
 ## v1.0.24 - 2025-08-25
 
@@ -85,7 +144,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - ✅ You'll get new features and bug fixes delivered seamlessly
 - ⚠️ If you're on an older version (v1.0.0-v1.0.23), you may need to manually download this update once to get back on the automatic update track
 
----
+***
 
 ## v1.0.22 - 2025-08-25
 
@@ -99,7 +158,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Adaptive Pipeline**: Release system adapts to any file structure changes
 - **Never Fails**: Even if files move, updates will still be delivered properly
 
----
+***
 
 ## v1.0.21 - 2025-08-25
 
@@ -114,7 +173,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Unbreakable Updates**: Release system now works in all conditions
 - **Seamless Experience**: Updates delivered automatically without any issues whatsoever
 
----
+***
 
 ## v1.0.20 - 2025-08-25
 
@@ -129,7 +188,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Perfect Release Pipeline**: End-to-end automation now works completely
 - **Reliable Updates**: Get new features and fixes delivered seamlessly
 
----
+***
 
 ## v1.0.19 - 2025-08-25
 
@@ -143,7 +202,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Perfect Update System**: Release pipeline now works flawlessly
 - **Reliable Delivery**: Updates will be delivered automatically without any issues
 
----
+***
 
 ## v1.0.17 - 2025-08-25
 
@@ -157,7 +216,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Bulletproof Updates**: Release system now handles all scenarios intelligently
 - **Never Fails**: Even edge cases won't prevent you from getting updates
 
----
+***
 
 ## v1.0.16 - 2025-08-25
 
@@ -171,7 +230,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Bulletproof Update System**: Release automation is now fully operational and reliable
 - **Seamless Updates**: Get new features and fixes delivered automatically without issues
 
----
+***
 
 ## v1.0.15 - 2025-08-25
 
@@ -185,7 +244,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Bulletproof Updates**: Enhanced release pipeline is now rock-solid
 - **Faster Delivery**: Get new features and fixes delivered automatically
 
----
+***
 
 ## v1.0.14 - 2025-08-25
 
@@ -199,7 +258,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - **Better Release Process**: Enhanced our automated release pipeline for more reliable updates
 - **Faster Updates**: Streamlined the process to get fixes to you more quickly
 
----
+***
 
 ## v1.0.13 - 2025-08-25
 
@@ -215,7 +274,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - Simplified analytics configuration
 - Enhanced privacy controls in settings
 
----
+***
 
 ## v1.0.11 - 2025-08-25
 
@@ -224,7 +283,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
   - Previously displayed hardcoded "Version 1.0 (1)" regardless of actual app version
   - Now shows dynamic version from GitHub releases (e.g., "Version 1.0.10 (1010)")
 
----
+***
 
 ## v1.0.6 - 2025-08-24
 
@@ -250,7 +309,7 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - Extended timeout handling for slower connections
 - Better time formatting and user feedback
 
----
+***
 
 ## v1.0.2 - 2025-08-24
 
@@ -276,5 +335,5 @@ This update strengthens CircleCast's security posture by ensuring all releases a
 - Fixed automatic update system reliability
 - Improved release workflow stability
 
----
+***
 
