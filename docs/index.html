@@ -36,6 +36,52 @@ href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>, and
 this project adheres to <a
 href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
 <hr />
+<h2 id="upcoming-release---tbd">[Upcoming Release] - TBD</h2>
+<h3 id="major-bug-fixes">🐛 Major Bug Fixes</h3>
+<ul>
+<li><strong>FIXED</strong>: Screen Recording permission now shows
+correct status! (#32)
+<ul>
+<li>No more confusing “Denied” messages when you’ve actually granted
+permission</li>
+<li>Fixed issue where macOS treated different app versions as separate
+apps</li>
+<li>Much better onboarding experience - you’ll see accurate permission
+status every time</li>
+<li>Added helpful recovery options if you still see permission
+issues</li>
+</ul></li>
+</ul>
+<h3 id="enhanced-permission-management">🔧 Enhanced Permission
+Management</h3>
+<ul>
+<li><strong>NEW</strong>: Completely redesigned permission reset tool
+that’s now super user-friendly!
+<ul>
+<li>Check your current permissions with
+<code>./reset_permissions.sh --status</code></li>
+<li>Reset permissions for Screen Recording, Microphone, and Camera all
+at once</li>
+<li>Smart detection - the script knows if CircleCast is running and can
+quit/restart it for you</li>
+<li>Color-coded output makes it easy to see what’s working and what
+needs attention</li>
+<li>Works with all versions of CircleCast (development, production,
+alternative configs)</li>
+<li>Clear step-by-step guidance for fixing permission issues</li>
+</ul></li>
+</ul>
+<h3 id="improved-user-experience">⚡ Improved User Experience</h3>
+<ul>
+<li>Interactive mode walks you through permission fixes
+step-by-step</li>
+<li>Multiple operation modes: check status only, reset only, quiet mode
+for scripts</li>
+<li>Better error messages that actually help you fix problems</li>
+<li>Automatic app management - no more manually quitting and restarting
+CircleCast</li>
+</ul>
+<hr />
 <h2 id="v1.0.33---2025-08-25">v1.0.33 - 2025-08-25</h2>
 <h3 id="version-sync-fixed">🔄 Version Sync Fixed</h3>
 <ul>

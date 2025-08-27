@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Upcoming Release] - TBD
+
+### 🐛 Major Bug Fixes
+- **FIXED**: Screen Recording permission now shows correct status! (#32)
+  - No more confusing "Denied" messages when you've actually granted permission
+  - Fixed issue where macOS treated different app versions as separate apps
+  - Much better onboarding experience - you'll see accurate permission status every time
+  - Added helpful recovery options if you still see permission issues
+
+### 🔧 Enhanced Permission Management
+- **NEW**: Completely redesigned permission reset tool that's now super user-friendly!
+  - Check your current permissions with `./reset_permissions.sh --status`
+  - Reset permissions for Screen Recording, Microphone, and Camera all at once
+  - Smart detection - the script knows if CircleCast is running and can quit/restart it for you
+  - Color-coded output makes it easy to see what's working and what needs attention
+  - Works with all versions of CircleCast (development, production, alternative configs)
+  - Clear step-by-step guidance for fixing permission issues
+  
+### ⚡ Improved User Experience
+- Interactive mode walks you through permission fixes step-by-step
+- Multiple operation modes: check status only, reset only, quiet mode for scripts
+- Better error messages that actually help you fix problems
+- Automatic app management - no more manually quitting and restarting CircleCast
+
+---
+
 ## v1.0.33 - 2025-08-25
 
 ### 🔄 Version Sync Fixed
